@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<pages:BaseContentPage
+    xmlns:pages="clr-namespace:SampleApp.Base.Views"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:viewModel="clr-namespace:SampleApp.ViewModels"
+    x:Class="SampleApp.Views.MusicFormPage"
+    xmlns:viewCell="clr-namespace:SampleApp.ViewCells"
+    Title="{Binding PageTitle}"
+    x:Name="musicFormPage">
+    <pages:BaseContentPage.BindingContext>
+        <viewModel:MusicFormPageViewModel />
+    </pages:BaseContentPage.BindingContext>
+    <pages:BaseContentPage.Content>
+        <Grid
+            Padding="16,20,16,10"
+            RowSpacing="30">
+            <Grid.RowDefinitions>
+                <RowDefinition
+                    Height="*" />
+                <RowDefinition
+                    Height="auto" />
+            </Grid.RowDefinitions>
+            <ScrollView
+                Grid.Row="0"
+                Grid.ColumnSpan="2"
+                Padding="30">
+                <StackLayout
+                    Margin="0,0,0,10"
+                    Spacing="40"
+                    BindableLayout.ItemsSource="{Binding Fields}">
+                    <BindableLayout.ItemTemplate>
+                        <DataTemplate>
+                            <viewCell:CustomFieldViewCell
+                                ValueChaged="OnValueChanged" />
+                        </DataTemplate>
+                    </BindableLayout.ItemTemplate>
+                </StackLayout>
+            </ScrollView>
+            <Button
+                Grid.Row="0"
+                Grid.Column="0"
+                Text="Cancel"
+                Style="{StaticResource Font17WithBlueBackgroundAndWhiteBorderStyle}"
+                VerticalOptions="EndAndExpand"
+                HeightRequest="50"
+                Command="{Binding CancelCommand}" />
+            <Button
+                Grid.Row="0"
+                Grid.Column="1"
+                Text="Save"
+                Style="{StaticResource Font17WithBlueBackgroundAndWhiteBorderStyle}"
+                VerticalOptions="EndAndExpand"
+                HeightRequest="50"
+                Command="{Binding SaveCommand}"
+                IsEnabled="{Binding IsFormValidated}">
+                <Button.Triggers>
+                    <Trigger
+                        TargetType="Button"
+                        Property="IsEnabled"
+                        Value="False">
+                        <Setter
+                            Property="Style"
+                            Value="{StaticResource Font17WithBlueBackgroundDisabledStyle}" />
+                    </Trigger>
+                </Button.Triggers>
+            </Button>
+        </Grid>
+    </pages:BaseContentPage.Content>
+</pages:BaseContentPage>

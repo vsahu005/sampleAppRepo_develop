@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="DataObjects\" />
+    <Folder Include="StaticJsonHelper\" />
+    <Folder Include="Parser\" />
+    <Folder Include="NetworkAccessServices\" />
+    <Folder Include="NetworkAccessServices\MusicFormApiAccessServices\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="music_form.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="music_form.json" />
+  </ItemGroup>
+</Project>

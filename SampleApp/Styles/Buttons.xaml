@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<?xaml-comp compile="true" ?>
+<ResourceDictionary
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary
+            Source="LightTheme.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+    <Style
+        x:Key="Font17WithBlueBackgroundAndWhiteBorderStyle"
+        TargetType="Button">
+        <Setter
+            Property="FontSize"
+            Value="17" />
+        <Setter
+            Property="BackgroundColor"
+            Value="{StaticResource SlateBlueColor}" />
+        <Setter
+            Property="BorderWidth"
+            Value="2" />
+        <Setter
+            Property="HeightRequest"
+            Value="40" />
+        <Setter
+            Property="CornerRadius"
+            Value="20" />
+        <Setter
+            Property="BorderColor"
+            Value="{StaticResource WhiteTextColor}" />
+        <Setter
+            Property="TextColor"
+            Value="{StaticResource WhiteTextColor}" />
+    </Style>
+
+    <Style
+        x:Key="Font17WithBlueBackgroundDisabledStyle"
+        TargetType="Button">
+        <Setter
+            Property="FontSize"
+            Value="17" />
+        <Setter
+            Property="BackgroundColor"
+            Value="{StaticResource SlateBlueColor}" />
+        <Setter
+            Property="BorderWidth"
+            Value="2" />
+        <Setter
+            Property="HeightRequest"
+            Value="40" />
+        <Setter
+            Property="CornerRadius"
+            Value="20" />
+        <Setter
+            Property="BorderColor"
+            Value="{StaticResource WhiteTextColor}" />
+        <Setter
+            Property="TextColor"
+            Value="{StaticResource WhiteTextColor}" />
+        <Setter
+            Property="Opacity"
+            Value="0.5" />
+    </Style>
+</ResourceDictionary>

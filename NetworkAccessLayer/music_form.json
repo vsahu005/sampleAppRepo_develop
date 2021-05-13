@@ -1,0 +1,18 @@
+﻿{
+  "title": "Music Form",
+  "fields": [
+    {
+      "label": "Band Name",
+      "type": "textbox"
+    },
+    {
+      "label": "Genre",
+      "type": "dropdown",
+      "dropdownValues": [ "Rock", "Metal", "Jazz" ]
+    },
+    {
+      "label": "Rating out of 5",
+      "type": "numericTextBox"
+    }
+  ]
+}

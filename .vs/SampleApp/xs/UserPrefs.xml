@@ -1,0 +1,35 @@
+﻿<Properties StartupConfiguration="{13B72DBB-F138-4FBB-8223-1B2184B11FC2}|Default">
+  <MonoDevelop.Ide.ItemProperties.Platforms.SampleApp.iOS automaticSigning="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.950253E3-6B92-4055-8083-B68B4F08C28F" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="SampleApp/Constants/Constant.cs">
+    <Files>
+      <File FileName="SampleApp/ViewCells/CustomFieldViewCell.xaml.cs" Line="69" Column="62" />
+      <File FileName="SampleApp/Constants/Constant.cs" Line="11" Column="36" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="SampleApp" expanded="True">
+            <Node name="Shared" expanded="True">
+              <Node name="SampleApp" expanded="True">
+                <Node name="Constants" expanded="True">
+                  <Node name="Constant.cs" selected="True" />
+                </Node>
+                <Node name="ViewCells" expanded="True">
+                  <Node name="CustomFieldViewCell.xaml" expanded="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Platforms.SampleApp.Android PreferredExecutionTarget="Android.pixel_3_pie_9_0_-_api_28_1" />
+  <MonoDevelop.Ide.ItemProperties.Tests.SampleApp.Tests PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>

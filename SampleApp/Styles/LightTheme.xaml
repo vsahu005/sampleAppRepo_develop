@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xaml-comp compile="true" ?>
+<ResourceDictionary
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <Color
+        x:Key="AppBackgroundColor">#F5F5F5</Color>
+
+    <!--Button color-->
+    <Color
+        x:Key="SlateBlueColor">#6A5ACD</Color>
+
+    <!--Text color-->
+    <Color
+        x:Key="WhiteTextColor">#FFFFFF</Color>
+    <Color
+        x:Key="DarkGreyTextColor">#080808</Color>
+</ResourceDictionary>
